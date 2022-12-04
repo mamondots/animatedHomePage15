@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Animated Homepage</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <div class="logo">
+              <img src="img/rxSpPYU6-OhioLogo.svg">
+           </div>
+           <div class="menu">
+               <ul>
+                   <li><a href="">home</a></li>
+                   <li><a href="">about us</a></li>
+                   <li><a href="">services</a></li>
+                   <li><a href="">portfolio</a></li>
+                   <li><a href="">blog</a></li>
+               </ul>
+               <a hre="" class="menuBtn">contact us</a>
+           </div>
+        </header>
+        <div class="contant">
+           <div class="content-info">
+              <p><i class="fa-solid fa-play"></i> <span>showreel</span></p>
+              <h1>We're a full-<br> rang design <br>agency</h1>
+              <a href="" class="contentBtn">viwe showcase <i class="fa-solid fa-arrow-right"></i></a>
+           </div>
+           <div class="imgContent">
+             <img src="img/oh__img193.1.jpg">
+           </div>
+        </div>
+    </div>
+    <div class="servicePage">
+        <div class="serviceBoxes">
+          <div class="serviceBox servicebox01">
+              
+              <div class="overlay"></div>
+              <div class="serviceInfo">
+                 <p class="title">strategy</p>
+                 <h1>brand strategy &<br> art direction</h1>
+                 <p class="detils">
+                   Create a higher spacing for people through a unique compaigns
+                 </p>
+              </div>
+          </div>
+
+          <div class="serviceBox servicebox02">
+            <div class="overlay"></div>
+            <div class="serviceInfo">
+               <p class="title">design</p>
+               <h1>UI/UX design &<br> websites/app design</h1>
+               <p class="detils">
+                 Create a higher spacing for people through a unique compaigns
+               </p>
+            </div>
+        </div>
+
+        <div class="serviceBox servicebox03">
+         <div class="overlay"></div>
+         <div class="serviceInfo">
+            <p class="title">compaigns</p>
+            <h1>marketing &<br> content creation</h1>
+            <p class="detils">
+              Create a higher spacing for people through a unique compaigns
+            </p>
+         </div>
+     </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+         let animation = anime({
+            targets:'header',
+            translateY:[-80,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+        });
+
+        anime({
+            targets:'.content-info p',
+            translateX:[50,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:300,
+        });
+        anime({
+            targets:'.content-info h1',
+            translateX:[-50,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:500,
+        });
+
+        anime({
+            targets:'.content-info .contentBtn',
+            translateY:[-50,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:700,
+        });
+        anime({
+            targets:'.imgContent',
+            translateX:[100,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:900,
+        });
+
+        anime({
+            targets:'.serviceBoxes .servicebox01',
+            translateY:[60,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:1200,
+        });
+
+        anime({
+            targets:'.serviceBoxes .servicebox02',
+            translateY:[120,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:1300,
+        });
+
+        anime({
+            targets:'.serviceBoxes .servicebox03',
+            translateY:[150,0],
+            opacity:[0,1],
+            duration:800,
+            easing:'easeInOutSine',
+            delay:1500,
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+.container{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-color:#ffd6ee;
+    overflow-x: hidden;
+}
+header{
+    position: relative;
+    width:100%;
+    padding:40px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.menu{
+    position: relative;
+    display:flex;
+}
+.menu ul{
+    position: relative;
+    top:10px;
+    left:-12vh;
+    display:flex;
+}
+.menu ul li{
+    list-style:none;
+}
+.menu ul li a{
+    position: relative;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    color:#262626;
+    text-transform: capitalize;
+    margin:0 20px;
+    cursor: pointer;
+}
+.menu ul li a::before{
+    position: absolute;
+    content:"";
+    top:50%;
+    left:0;
+    width:0%;
+    height:2px;
+    background-color:rgb(24,56,243);
+    transition:0.3s;
+}
+.menu ul li a:hover::before{
+    width:100%;
+}
+.menu .menuBtn{
+    position: relative;
+    padding:12px 30px;
+    font-size:16px;
+    font-weight:600;
+    background-color:rgb(24,53,243);
+    border:2px solid rgb(24,53,243);
+    color:#fff;
+    text-decoration:none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition:0.3s;
+}
+.menu .menuBtn:hover{
+    background-color:transparent;
+    color:rgb(24,53,243);
+}
+.contant{
+    position: relative;
+    display:flex;
+}
+.content-info{
+    position: relative;
+    top:25px;
+    padding:0 100px;
+}
+.content-info p{
+    font-size:18px;
+    text-transform: capitalize;
+    font-weight:600;
+    color:#000;
+}
+.content-info p i{
+    position: relative;
+    width:50px;
+    height:50px;
+    background-color:#000;
+    color:#fff;
+    border-radius:50%;
+    line-height:50px;
+    text-align:center;
+    cursor: pointer;
+    transition:0.5s;
+}
+.content-info p i:hover{
+    background-color:rgb(24,53,243);
+}
+.content-info p span{
+    position: relative;
+    left:5px;
+}
+.content-info h1{
+    font-size:5rem;
+    font-weight:700;
+    padding:12px 0;
+    color:#4200ff;
+    line-height:1;
+}
+.content-info .contentBtn{
+    position: relative;
+    top:30px;
+    padding:14px 30px;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+    text-transform: capitalize;
+    color:#4200ff;
+    border:2px solid #4200ff;
+    border-radius:8px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.content-info .contentBtn:hover{
+    border-color:#000;
+    color:#000;
+}
+.content-info .contentBtn i{
+    position: relative;
+    left:5px;
+    top:2px;
+    transition:0.3s;
+}
+.content-info .contentBtn:hover i{
+    left:15px;
+}
+.imgContent{
+    position: absolute;
+    top:0vh;
+    right:-88vh;
+}
+.imgContent img{
+    width:45%;
+}
+.servicePage{
+    position: relative;
+    width:100%;
+    height:50vh;
+    background-color:#fff;
+}
+.serviceBoxes{
+    position: relative;
+    display:flex;
+    padding:0 100px;
+}
+.serviceBoxes .serviceBox{
+    position: relative;
+    top:-16vh;
+    width:400px;
+    height:500px;
+    background-image:url(img/oh__img9.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    cursor: pointer;
+    overflow:hidden;
+}
+.serviceBoxes .servicebox02{
+    background-image:url(img/oh__img30.jpeg);
+}
+.serviceBoxes .servicebox03{
+    background-image:url(img/oh__img69.jpg);
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.347);
+}
+.serviceInfo{
+    position: absolute;
+    top:0;
+    z-index:2;
+    color:#fff;
+    padding:40px 20px;
+}
+.serviceInfo .title{
+    font-size:16px;
+    color:#fff;
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing: 1;
+}
+.serviceInfo h1{
+    text-transform: capitalize;
+}
+.serviceInfo .detils{
+    position: absolute;
+    bottom:-43vh;
+    font-size:14px;
+}
